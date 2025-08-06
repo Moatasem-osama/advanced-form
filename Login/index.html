@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+  
+    <header class="container text-center box p-5 ">
+        <h1 class="text-white">Login</h1>
+    
+        <input type="email" autocomplete="email" name="email" id="loginEmail" placeholder="Enter your Email" class="form-control my-3 bg-transparent text-white  ">
+         <input type="password" name="password" id="loginPassword" placeholder="Enter your password" class="form-control my-3 bg-transparent text-white  ">
+       
+        <div id="req" class="mb-1 text-danger text-center"></div>
+        <button
+          
+          id="loginButton"
+          class="btn btn-outline-info text-white w-100 my-3 fs-2"
+        >
+          Login
+        </button>
+    <p class="text-white">Don’t have an account? <a class="text-white list-unstyled text-decoration-none" href="../signUp/index.html">Sign Up</a></p>
+    </header>
+   
+    <script src="main.js"></script>
+  </body>
+</html>

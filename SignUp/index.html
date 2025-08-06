@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+  
+    <header class="container text-center box p-5 ">
+        <h1 class="text-white">Register</h1>
+        <input oninput="validateForm(this)" type="text" autocomplete="name" name="name"  id="signUpName" placeholder="Enter your Name" class="form-control my-3 bg-transparent text-white ">
+        <div class="alert alert-danger d-none">
+          Name must be 3-15 characters (letters, numbers, _ or -)
+        </div>
+        <input oninput="validateForm(this)" type="email" autocomplete="email" name="email" id="signUpEmail" placeholder="Enter your Email" class="form-control my-3 bg-transparent text-white  ">
+         <div class="alert alert-danger d-none">Enter a valid email address</div>
+        <input oninput="validateForm(this)" type="password" name="password" id="signUpPassword" placeholder="Enter your password" class="form-control my-3 bg-transparent text-white  ">
+        <div class="alert alert-danger d-none">
+          Password must be at least 8 characters, include uppercase, lowercase,
+          number, and symbol
+        </div> 
+        <div id="req" class="mb-1 text-danger text-center"></div>
+        <button
+          
+          id="btn"
+          class="btn btn-outline-info text-white w-100 my-3 fs-2"
+        >
+          Register
+        </button>
+    
+    </header>
+   
+    <script src="main.js"></script>
+  </body>
+</html>
